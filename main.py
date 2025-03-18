@@ -1,5 +1,4 @@
-from window import Window
-from gfx import Line, Point, Cell
+from gfx import Window, Line, Point, Cell
 import logging
 
 def main():
