@@ -1,11 +1,11 @@
-from gfx import Maze, Window
+from gfx import Maze, Window, Cell
 import logging
 
 def main():
     logging.basicConfig(level=logging.INFO)
     logging.info("Starting the window")
-    num_rows = 12
-    num_cols = 16
+    num_rows = 5
+    num_cols = 3
     margin = 50
     screen_x = 800
     screen_y = 600
@@ -13,9 +13,7 @@ def main():
     cell_size_y = (screen_y - 2 * margin) / num_rows
     win = Window(screen_x, screen_y)
     maze = Maze(margin, margin, num_rows, num_cols, cell_size_x, cell_size_y, win)
-
     win.wait_for_close()
-    
 
 if __name__ == "__main__":
     main()
